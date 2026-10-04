@@ -41,15 +41,15 @@ nav a:hover,.text-link:hover{color:var(--text);text-decoration:underline;text-un
 @media(max-width:360px){.brand-mark{width:109px}nav{gap:12px}.swatches i{width:15px;height:15px}.identity-bottom{gap:10px}.identity-preview{padding:24px}}
 
 /* Oferta del catálogo dentro del portafolio. */
-.offer{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#1b1d18}
-.offer-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);gap:90px;align-items:start}
-.offer h2{font-size:clamp(36px,4vw,56px);font-weight:500;line-height:1.08;letter-spacing:-2px;margin:23px 0 30px}
+.offer{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--olive)}
+.offer-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:80px;align-items:start}
+.offer h2{font-family:var(--sans);font-size:clamp(36px,4.8vw,65px);font-weight:500;line-height:1.08;letter-spacing:-2.5px;margin:26px 0 30px}
 .offer h2 em{font-family:var(--serif);font-weight:400}
 .offer-price{display:flex;align-items:baseline;gap:13px;flex-wrap:wrap;margin:0 0 20px}
-.offer-price strong{font-size:clamp(36px,4.2vw,60px);line-height:1.08;letter-spacing:-2px;font-weight:600}
-.offer-price span{font-size:14px;color:var(--muted)}
+.offer-price strong{font-family:var(--serif);font-size:clamp(48px,5vw,70px);line-height:1.1;letter-spacing:-2.5px;font-weight:400;font-variant-numeric:lining-nums}
+.offer-price span{font-family:var(--sans);font-size:12px;letter-spacing:.5px;color:var(--muted)}
 .offer-description{font:18px/1.55 var(--serif);color:var(--muted);max-width:350px;margin:0 0 28px}
-.offer-button{display:inline-flex;align-items:center;justify-content:space-between;gap:25px;background:var(--text);color:var(--bg);padding:15px 20px;font-size:13px;font-weight:700;min-height:48px;max-width:100%;border:1px solid var(--text)}
+.offer-button{font-family:var(--sans);border-radius:0;display:inline-flex;align-items:center;justify-content:space-between;gap:25px;background:var(--text);color:var(--bg);padding:15px 20px;font-size:13px;font-weight:700;min-height:48px;max-width:100%;border:1px solid var(--text)}
 .offer-button:hover{background:#fffdf4}
 .offer-button span{font-size:19px;line-height:1}
 .offer-includes{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
@@ -60,7 +60,7 @@ nav a:hover,.text-link:hover{color:var(--text);text-decoration:underline;text-un
 @media(max-width:1000px){.offer-grid{gap:45px}.offer h2{font-size:43px}}
 @media(max-width:700px){.offer-grid{grid-template-columns:minmax(0,1fr);gap:37px}.offer h2{font-size:clamp(34px,8.9vw,43px);letter-spacing:-1.25px;margin-bottom:25px}.offer-price strong{font-size:48px}.offer-description{font-size:17px}.offer-includes li{font-size:14px;padding-top:16px;padding-bottom:16px}.offer-includes li::before{top:17px}.offer-button{width:100%;gap:12px}.offer-exclusions{font-size:12px}}
 
-.faq{max-width:1200px}
+.faq{max-width:1200px}.faq h2 em{font-family:var(--serif);font-weight:400}
 .faq .section-heading{margin-bottom:32px}
 .faq-list{border-top:1px solid var(--line)}
 .faq-list details{border-bottom:1px solid var(--line)}
@@ -73,10 +73,10 @@ nav a:hover,.text-link:hover{color:var(--text);text-decoration:underline;text-un
 .faq-answer{max-width:780px;padding:0 45px 24px 0;color:var(--muted);font:17px/1.75 var(--serif)}
 .faq-answer p{margin:0}
 .consultation-intro{max-width:640px}
-.consultation-status{display:flex;gap:15px;border:1px solid #696950;padding:26px;margin-top:34px;max-width:700px;background:#14161530}
-.consultation-dot{flex-shrink:0;width:8px;height:8px;border-radius:50%;background:#c4c6a1;margin-top:8px}
+.consultation-status{display:flex;gap:15px;border:1px solid var(--line);padding:26px;margin-top:34px;max-width:700px;background:transparent}
+.consultation-dot{flex-shrink:0;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:8px}
 .consultation-status h3{margin:0 0 9px;font-size:18px;font-weight:500;line-height:1.4}
-.consultation-status p{margin:0;font-size:14px;line-height:1.75;color:var(--muted)}
+.consultation-status p{margin:0;font:17px/1.6 var(--serif);color:var(--muted)}
 .consultation-note{font-size:13px;line-height:1.6;margin:22px 0 16px}
 .consultation-disclosure{max-width:700px;font-size:12px;line-height:1.8;color:var(--muted);margin:0}
-@media(max-width:700px){.faq-list summary{font-size:16px;padding:20px 36px 20px 0}.faq-list summary::after{top:15px}.faq-answer{font-size:16px;padding:0 12px 22px 0}.consultation-status{padding:21px 18px;gap:12px}.consultation-status h3{font-size:17px}.consultation-status p{font-size:13px}}
+@media(max-width:700px){.faq-list summary{font-size:16px;padding:20px 36px 20px 0}.faq-list summary::after{top:15px}.faq-answer{font-size:16px;padding:0 12px 22px 0}.consultation-status{padding:21px 18px;gap:12px}.consultation-status h3{font-size:17px}.consultation-status p{font-size:16px}}
